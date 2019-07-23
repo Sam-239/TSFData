@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tsfdata">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".editProfdetail"></activity>
+        <activity android:name=".editPP" />
+        <activity android:name=".editPersonalinfo" />
+        <activity android:name=".CERTIEDIT" />
+        <activity android:name=".editedu" />
+        <activity android:name=".Toggle" />
+        <activity android:name=".ui.getEdudet" />
+        <activity android:name=".professionaldetail" />
+        <activity android:name=".Certificateupload" />
+        <activity android:name=".education" />
+        <activity android:name=".Imageupload" />
+        <activity android:name=".Personalinfo" />
+        <activity android:name=".Signup" />
+        <activity android:name=".ui.getPersonaldetails" />
+        <activity android:name=".ui.getProfDetails" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

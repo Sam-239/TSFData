@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.getPersonaldetails">
+
+
+    <TextView
+        android:id="@+id/NAME"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="#37A0A0A0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/MOBILE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/SKILLS"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="25dp"
+        android:background="#37A0A0A0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LOCATION"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="#37A0A0A0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/LINKS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/MOBILE"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="#37A0A0A0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/LOCATION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_personal"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="#039BE5"
+        android:text="   Personal Info"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:fontFamily="@font/actor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LINKS"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="#37A0A0A0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/SKILLS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ProfilepicDIsplay"
+        android:layout_width="183dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/NAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_personal"
+        app:srcCompat="@drawable/personalicon" />
+
+    <Button
+        android:id="@+id/editPersonal"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginRight="346dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toTopOf="@+id/NAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

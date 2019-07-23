@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#F3F3F3"
+        android:text="Education Details"
+        android:textColor="#19A31D"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DEGREE"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#19353535"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ORGANISATION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LOCATION2"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#19353535"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ENDYEAR"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#19353535"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/LOCATION2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ORGANISATION"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#19353535"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/STARTYEAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/STARTYEAR"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#19353535"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ENDYEAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Certidisplay"
+        android:layout_width="186dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/DEGREE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:srcCompat="@drawable/education" />
+
+    <Button
+        android:id="@+id/editEDU"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="322dp"
+        android:layout_marginRight="322dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toTopOf="@+id/DEGREE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteedu"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toTopOf="@+id/DEGREE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editEDU" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
